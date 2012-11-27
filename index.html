@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Timecode.js by reidransom</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Timecode.js</h1>
+        <p>This is a javascript module for manipulating SMPTE timecode.</p>
+
+        <p class="view"><a href="https://github.com/reidransom/timecode.js">View the Project on GitHub <small>reidransom/timecode.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/reidransom/timecode.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/reidransom/timecode.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/reidransom/timecode.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>timecode.js</h1>
+
+<p>This is a javascript module for manipulating SMPTE timecode.</p>
+
+<p>It is primarily based on <a href="http://code.google.com/p/pytimecode/">pytimecode</a>.</p>
+
+<p>Theoretically it supports 60, 59.94, 50, 30, 29.97, 25, 24, 23.98 frame rates as well as milliseconds, although only 29.97 and 23.98 have been tested.  Timecodes can be created from a number representing the frame count or a string in the form "hh:mm:ss:ff".  Drop-frame is not working yet.</p>
+
+<h2>Usage</h2>
+
+<pre><code>var timecode = require("timecode").Timecode;
+
+var tc1 = timecode.init({framerate: "29.97", timecode: "01:00:00:00"});
+var tc2 = timecode.init({framerate: "23.98", timecode: "01:00:00:00"});
+</code></pre>
+
+<h2>Testing</h2>
+
+<pre><code>$ npm install -g nodeunit
+
+$ nodeunit test
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/reidransom">reidransom</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
