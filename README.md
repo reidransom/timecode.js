@@ -18,5 +18,4 @@ Theoretically it supports 60, 59.94, 50, 30, 29.97, 25, 24, 23.98 frame rates as
 ## Testing
 
     $ npm install -g nodeunit
-
     $ nodeunit test
