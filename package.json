@@ -1,23 +1,23 @@
 {
-	"name": "timecode",
-	"description": "A javascript module for manipulating SMPTE tiemcode.",
-	"homepage": "https://github.com/reidransom/timecode.js",
-	"main": "./lib/timecode.js",
-	"version": "0.0.1",
-	"author": {
-		"name": "Reid Ransom",
-		"email": "reid@reidransom.com",
-		"url": "http://reidransom.com/"
-	},
-	"bugs": {
-		"url": "https://github.com/reidransom/timecode.js/issues",
-		"email": "reid@reidransom.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/reidransom/timecode.js.git"
-	},
-	"devDependencies": {
-		"nodeunit": "*"
-	}
+  "name": "timecode",
+  "description": "A javascript module for manipulating SMPTE tiemcode.",
+  "homepage": "https://github.com/reidransom/timecode.js",
+  "main": "./lib/timecode.js",
+  "version": "0.0.2",
+  "author": {
+    "name": "Reid Ransom",
+    "email": "reid@reidransom.com",
+    "url": "http://reidransom.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/reidransom/timecode.js/issues",
+    "email": "reid@reidransom.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reidransom/timecode.js.git"
+  },
+  "devDependencies": {
+    "nodeunit": "*"
+  }
 }
