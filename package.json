@@ -1,9 +1,9 @@
 {
   "name": "timecode",
-  "description": "A javascript module for manipulating SMPTE tiemcode.",
+  "description": "A JavaScript module for manipulating SMPTE timecodes",
   "homepage": "https://github.com/reidransom/timecode.js",
   "main": "./lib/timecode.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Reid Ransom",
     "email": "reid@reidransom.com",
@@ -16,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/reidransom/timecode.js.git"
+  },
+  "scripts": {
+    "test": "nodeunit"
   },
   "devDependencies": {
     "nodeunit": "*"

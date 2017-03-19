@@ -148,6 +148,29 @@ exports["Timecode"] = function(test) {
     //console.log(tc.frameNumberToDropFrameTimecode(108000));
     //console.log(tc.dropFrameTimecodeToFrameNumber([1, 0, 3, 18]));
 
+    // Tests for Date() object features.
+    var d = new Date(0,0,0,0,8,30,200);
+    tcd = timecode.init({
+        framerate: "29.97",
+        timecode: d,
+        drop_frame: true
+    });
+    test.equal("00:08:30;06", tcd.toString());
+    tcd = timecode.init({
+        framerate: "29.97",
+        timecode: new Date(0,0,0,0,8,0,0),
+        drop_frame: true
+    });
+    test.equal("00:07:59;29", tcd.toString());
+    tcd = timecode.init({
+        framerate: "29.97",
+        timecode: new Date(0,0,0,0,8,0,30),
+        drop_frame: true
+    });
+    test.equal("00:08:00;02", tcd.toString());
+    tcd.add(new Date(0,0,0,0,0,60));
+    test.equal("00:09:00;02", tcd.toString());
+    
     test.done();
 
 
